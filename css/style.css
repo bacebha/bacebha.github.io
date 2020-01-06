@@ -66,6 +66,20 @@ h1 {
     margin: 0 auto;
 }
 
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 306px;
+}
+
+.logo {
+    display: block;
+    width: 181px;
+    height: 49px;
+    background-image: url(../img/logo.png);
+}
+
 .nav {
     font-size: 12px;
     font-weight: 700;
@@ -77,12 +91,24 @@ h1 {
 }
 
 .nav>li {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .nav-item {
     color: #6e7ea9;
     text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.screen-img {
+    display: block;
+    background-image: url(../img/bg-1.png);
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 735px;
+    position: absolute;
+    right: 0;
+    top: 189px;
 }
 
 .btn-primary {
@@ -100,7 +126,7 @@ h1 {
 
 .btn-primary:hover {
     color: #1085e4;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .btn-secondary {
@@ -141,6 +167,51 @@ h1 {
     text-decoration: none;
     padding: 20px 39px;
     border-radius: 30px;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #94b4cc;
+    border: 1px solid #94b4cc;
+}
+
+.list-company {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.list-company-item {
+    display: block;
+}
+
+.company-one {
+    background-image: url(../img/token.png);
+    flex-basis: 198px;
+    height: 58px;
+}
+
+.company-two {
+    background-image: url(../img/magneto.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+
+.company-three {
+    background-image: url(../img/boohoo.png);
+    flex-basis: 201px;
+    height: 47px;
+}
+
+.company-four {
+    background-image: url(../img/fractal.png);
+    flex-basis: 200px;
+    height: 69px;
 }
 
 .grid h2 {
@@ -202,10 +273,46 @@ h1 {
 .box-price {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 .box-price-item {
-    background-color: #f5faff;
+    background-color: #edf4fb;
+    flex-basis: 32%;
+    position: relative;
+    padding: 90px 0 96px 0;
+}
+
+.box-price-item h3 {
+	color: #000958;
+	font-size: 70px;
+	letter-spacing: -1px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}	
+
+.box-price-item h3 span {
+	font-size: 20px;
+
+}	
+
+.box-price-item p {
+	font-size: 14px;
+	color: #0084ff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.box-price-item:first-child h3 {
+	margin-bottom: 35px;
+}
+
+.box-price-item h3 span:first-child {
+	color: #000958;
+}
+
+.box-price-item h3 span:last-child {
+	color: #7b8ab2;
 }
 
 .box-price-item.active {
@@ -213,14 +320,51 @@ h1 {
     color: #fff;
 }
 
+.box-price-item.active h3 {
+    color: #fff;
+}
+
+.box-price-item.active h3 span:first-child {
+    color: #fff;
+}
+
 .box-price-item ul {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 34px;
+    margin-bottom: 59px;
+    font-size: 14px;
+}
+
+.box-price-item ul>li {
+    margin-bottom: 14px;
+}
+
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 
 
 /* PAGE */
+
+.page-header {
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 330px 0;
+    position: relative;
+}
+
+.page-company {
+    background-image: url(../img/partners_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px;
+}
 
 .page-stat, .page-screen {
     background-color: #edf6ff;
@@ -236,4 +380,15 @@ h1 {
 
 .page-screen {
     padding: 116px 0 0 0;
+}
+
+.page-subscribe {
+    background: rgba(10,32,144,1);
+    background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,117,204,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,117,204,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,117,204,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,117,204,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,117,204,1) 100%);
+    background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,117,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2375cc', GradientType=1 );
 }
