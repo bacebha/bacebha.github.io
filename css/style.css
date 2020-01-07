@@ -61,6 +61,17 @@ h1 {
     max-width: 500px;
 }   
 
+.page-subscribe .title-h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.page-subscribe .title-h2 span {
+    font-size: 14px;
+}
+
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -122,6 +133,7 @@ h1 {
     padding: 20px 39px;
     border-radius: 30px;
     border: 1px solid #1085e4;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -140,6 +152,7 @@ h1 {
     padding: 20px 39px;
     border-radius: 30px;
     border: 1px solid #cbdbe8;
+    transition: 0.3s;
 }
 
 .btn-secondary:hover {
@@ -150,6 +163,7 @@ h1 {
     font-weight: 400;
     letter-spacing: 1.7px;
     padding: 20px 56px;
+    transition: 0.3s;
 }
 
 .btn-group a + a {
@@ -167,6 +181,7 @@ h1 {
     text-decoration: none;
     padding: 20px 39px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 
 .btn-info:hover {
@@ -214,6 +229,61 @@ h1 {
     height: 69px;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                        "d b c"
+                        "d f g"
+                        "e f g"
+                        "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.grid-title {
+    grid-area: a;
+    padding-top: 30px;
+}
+
+.title-40 {
+    font-size: 40px;
+}
+
+.grid-item-1{ 
+    grid-area: b;
+}
+
+.grid-item-2{ 
+    grid-area: c;
+}
+
+.grid-item-3{ 
+    grid-area: d;
+}
+
+.grid-item-4{ 
+    grid-area: e;
+}
+
+.grid-item-5{ 
+    grid-area: f;
+}
+
+.grid-item-6{ 
+    grid-area: g;
+}
+
+.grid-text {
+   grid-area: h; 
+}
+
+.grid-text p {
+
+
+}
+
 .grid h2 {
     font-size: 40px;
     color: #192b59;
@@ -227,10 +297,17 @@ h1 {
     display: block;
 }
 
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 5px #f3f3f3;
+    padding: 50px 30px 20px;
+}
+
 .grid-item h3 {
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
+    margin-bottom: 18px;
 
 }
 
@@ -241,11 +318,50 @@ h1 {
     text-decoration: none;
 }
 
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    height: 92px;
+    margin: 0 auto 21px;
+    background-position: center;
+}
+
+.grid-icon-1 {
+    background-image: url(../img/icon_1.png);
+    background-size: 73px 79px;
+}
+
+.grid-icon-2 {
+    background-image: url(../img/icon_2.png);
+    background-size: 89px 85px;
+}
+
+.grid-icon-3 {
+    background-image: url(../img/icon_3.png);
+    background-size: 79px 82px;
+}
+
+.grid-icon-4 {
+    background-image: url(../img/icon_6.png);
+    background-size: 103px 920x;
+}
+
+.grid-icon-5 {
+    background-image: url(../img/icon_4.png);
+    background-size: 85px 90px;
+}
+
+.grid-icon-6 {
+    background-image: url(../img/icon_5.png);
+    background-size: 100px 87px;
+}
+
 .list-stat {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-top: 76px;
+    padding;
 }
 
 .list-stat>li {
@@ -343,11 +459,51 @@ h1 {
 .box-subscribe {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1110px;
     margin: 0 auto;
 }
 
+.box-subscribe-text {
+    font-size: 18px;
+    max-width: 437px;
+}
 
+.box-subscribe-user {
+    position: relative;
+}
+
+.box-subscribe-child {
+    flex-basis: 49%;
+}
+
+.box-subscribe-user input {
+    color: #fff;
+    border: 2px solid #3f5cb1;
+    font-size: 14px;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 25px 230px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    padding: 17px 50px;
+}
+
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+    outline: none;
+}
+
+.box-subscribe-user input::-webkit-input-placeholder {color: #b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color: #b1c3ee;}
+.box-subscribe-user input:-moz-placeholder           {color: #b1c3ee;}
+.box-subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
 
 /* PAGE */
 
@@ -382,7 +538,13 @@ h1 {
     padding: 116px 0 0 0;
 }
 
+.page-grid {
+    padding: 87px 0 99px 0;
+}
+
 .page-subscribe {
+    padding: 25px 0 28px 0;
+    color: #fff;
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,117,204,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,117,204,1)));
