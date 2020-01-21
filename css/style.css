@@ -752,8 +752,10 @@ p.page-stat2-text {
     margin: 0 auto;
 }
 
-.box-team-item .btn-more {
+
+button.btn-more {
     display: block;
+    background: transparent;
     background-image: url(../img/btn-more.png);
     margin: 0 auto;
     width: 50px;
