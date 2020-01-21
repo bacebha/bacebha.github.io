@@ -487,10 +487,11 @@ h1 {
     height: 760px;
     background-image: url(../img/stat.png);
     background-size: 100% 100%;
-    background-position: 0 0;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
     position: absolute;
-    left: -20px;
-    bottom: 0;
+    left: -12px;
+    bottom: 121px;
 }
 
 p.page-analytics-text {
@@ -501,7 +502,7 @@ p.page-stat2-text {
     margin-bottom: 54px;
 }
 
-.page-clients .title-40 {
+.page-clients .title-40, .page-team .title-40{
     color: #fff;
 }
 
@@ -590,7 +591,7 @@ p.page-stat2-text {
 .box-price {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 83px;
 }
 
 .box-price-item {
@@ -605,7 +606,7 @@ p.page-stat2-text {
 	font-size: 70px;
 	letter-spacing: -1px;
 	margin-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }	
 
 .box-price-item h3 span {
@@ -648,13 +649,17 @@ p.page-stat2-text {
 .box-price-item ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 34px;
-    margin-bottom: 59px;
+    margin-top: 36px;
+    margin-bottom: 63px;
     font-size: 14px;
 }
 
 .box-price-item ul>li {
     margin-bottom: 14px;
+}
+
+.box-price .btn-primary {
+    padding: 20px 60px;
 }
 
 .box-subscribe {
@@ -706,6 +711,62 @@ p.page-stat2-text {
 .box-subscribe-user input:-moz-placeholder           {color: #b1c3ee;}
 .box-subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
 
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 31.5%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    position: relative;
+    padding: 193px 0 42px 0;
+}    
+
+
+.box-team-item .position {
+    font-style: 14px;
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 900;
+    margin-bottom: 0;
+    letter-spacing: 2.1px;
+}
+
+.box-team-item .name {
+    font-style: 26px;
+    color: #192b59;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: -0.5px;
+}
+
+
+.box-team-item .avatar {
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.box-team-item .btn-more {
+    display: block;
+    background-image: url(../img/btn-more.png);
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.box-team-item .btn-more:focus {
+    outline: none;
+}
+
+
 /* PAGE */
 
 .page-header {
@@ -731,6 +792,10 @@ p.page-stat2-text {
 
 .page-stat {
     padding: 116px 0 96px 0;
+}
+
+.page-plan {
+    padding: 81px 0 121px 0;
 }
 
 .page-plan, .page-screen {
@@ -810,4 +875,12 @@ position: relative;
     left: 0;
     top: 0;
     z-index: -1;
+}
+
+.page-team {
+   text-align: center; 
+   background-image: url(../img/team_bg.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 20px 0 20px 0;
 }
