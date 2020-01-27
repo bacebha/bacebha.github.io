@@ -751,7 +751,7 @@ p.page-stat2-text {
 
 .box-team-item .btn-more span {
     background-image: url(../img/btn-team_2.png);
-    background-position: -16px -12px;
+    background-position: -17px -12px;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
@@ -760,7 +760,7 @@ p.page-stat2-text {
 }
 
 .box-team-item .btn-more:hover span {
-    background-position: -16px -58px;
+    background-position: -17px -58px;
 
 }   
 
@@ -843,6 +843,29 @@ p.page-stat2-text {
     background-position: -172px -51px;
 }
 
+.object-circle {
+    display: block;
+    position: absolute;
+    left: -84px;
+    bottom: -367px;
+    background-image: url(../img/circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 413px;
+    height: 765px;
+}
+
+.object-rhombus {
+    display: block;
+    position: absolute;
+    right: -139px;
+    top: -202px;
+    background-image: url(../img/romb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 629px;
+    height: 644px;
+}
 
 /* PAGE */
 
@@ -869,6 +892,7 @@ p.page-stat2-text {
 
 .page-stat {
     padding: 116px 0 96px 0;
+    position: relative;
 }
 
 .page-plan {
