@@ -82,6 +82,11 @@ h1 {
     margin-bottom: 26px;
 }
 
+.flex-form .title-h2 {
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -502,7 +507,7 @@ p.page-stat2-text {
     color: #fff;
 }
 
-.page-clients .title-40 span {
+.page-clients .title-40 span, .page-team .title-40 span {
     color: #85c8ff;
 }
 
@@ -769,7 +774,7 @@ p.page-stat2-text {
 }
 
 .box-team-item .position {
-    font-style: 14px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #1a88e1;
     font-weight: 900;
@@ -778,7 +783,7 @@ p.page-stat2-text {
 }
 
 .box-team-item .name {
-    font-style: 26px;
+    font-size: 26px;
     color: #192b59;
     font-weight: 600;
     margin-top: 8px;
@@ -879,6 +884,109 @@ p.page-stat2-text {
     text-align: center;
     margin: 0;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 51px;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 14px;
+    border: 2px solid #dce4ec;
+    padding: 21px 75px 21px 37px;
+    border-radius: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 161px;
+    resize: none;
+}
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {color: #8995b3;}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder          {color: #8995b3;}
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder           {color: #8995b3;}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder      {color: #8995b3;}
+
+.contact-form .btn-primary {
+    position: relative;
+    padding: 22px 40px 22px 65px;
+    max-width: 232px;
+    letter-spacing: 2px;
+}
+
+.contact-form .btn-primary::before {
+    content: '';
+    background-image: url(../img/btn-plane.png);
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    left: 54px;
+    top: calc(50% - 6px);
+    display: block;
+}
+
+.contact-form-text {
+    margin-bottom: 34px;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.flex-form img {
+    margin-left: 60px;
+    width: 465px;
+    height: 408px;
+}
+
+.contact-form-item {
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.contact-form-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 42px;
+    background-repeat: no-repeat;
+}
+
+.contact-form-name::after {
+    background-image: url(../img/icon-name.png);
+    width: 13px;
+    height: 15px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-mail::after {
+    background-image: url(../img/icon-mail.png);
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-text::after {
+    background-image: url(../img/icon-text.png);
+    width: 14px;
+    height: 15px;
+    top: 29px;
+}
+
+.flex-form>div {
+    flex-basis: 39%;
+}
+
 /* PAGE */
 
 .page-header {
@@ -995,5 +1103,13 @@ position: relative;
    background-image: url(../img/team_bg.png);
    background-position: center;
    background-repeat: no-repeat;
-   padding: 20px 0 20px 0;
+   padding: 82px 0 121px 0;
+}
+
+.page-form {
+   background-image: url(../img/page-form-bg.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 70px 0 121px 0;
 }
